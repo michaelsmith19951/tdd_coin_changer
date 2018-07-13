@@ -22,10 +22,10 @@ class TestTddCoinChanger < Minitest::Test
 		assert_equal({:quarter => 0, :dime => 1, :nickel => 0, :penny => 0}, coin_changer(amount))
 	end
 
-	# def test_if_nickel_equals_5
-	# 	amount = 5
-	# 	assert_equal({:nickel => 5}, coin_changer(amount))
-	# end
+	def test_if_nickel_equals_5
+		amount = 5
+		assert_equal({:quarter => 0, :dime => 0, :nickel => 1, :penny => 0}, coin_changer(amount))
+	end
 
 	# def test_if_penny_equals_1
 	# 	amount = 1
