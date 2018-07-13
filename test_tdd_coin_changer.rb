@@ -8,14 +8,14 @@ require_relative "tdd_coin_changer.rb"
 class TestTddCoinChanger < Minitest::Test
 
 	def test_if_hash_is_class
-		amount = 1
+		amount = 0
 		assert_equal(Hash, coin_changer(amount).class)
 	end
 
-	# def test_if_quarter_equals_25
-	# 	amount = 25
-	# 	assert_equal({:quarter => 1}, coin_changer(amount))
-	# end
+	def test_if_quarter_equals_25
+		amount = 25
+		assert_equal({:quarter => 1, :dime => 0, :nickel => 0, :penny => 0}, coin_changer(amount))
+	end
 
 	# def test_if_dime_equals_10
 	# 	amount = 10
@@ -36,4 +36,6 @@ class TestTddCoinChanger < Minitest::Test
 		amount = 0
 		assert_equal({:quarter => 0, :dime => 0, :nickel => 0, :penny => 0}, coin_changer(amount))
 	end
+
+	
 end
