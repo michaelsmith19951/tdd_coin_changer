@@ -42,7 +42,7 @@ class TestTddCoinChanger < Minitest::Test
 		assert_equal({:quarter => 1, :dime => 1, :nickel => 1, :penny => 1}, coin_changer(amount))
 	end
 
-	def test_if_quarter_and_dime_equals_35
+	def test_if_quarter_and_dime_equals_35_cents
 		amount = 35
 		assert_equal({:quarter => 1, :dime => 1, :nickel => 1, :penny => 0}, coin_changer(amount))
 	end
