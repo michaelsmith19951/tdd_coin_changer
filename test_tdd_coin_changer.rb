@@ -12,8 +12,13 @@ class TestTddCoinChanger < Minitest::Test
 		assert_equal(Hash, coin_changer(amount).class)
 	end
 
-	def test_if_quarter_equals_25
-		amount = 25
-		assert_equal({:quarter => 1}, coin_changer(amount))
+	# def test_if_quarter_equals_25
+	# 	amount = 25
+	# 	assert_equal({:quarter => 1}, coin_changer(amount))
+	# end
+
+	def test_if_dime_equals_10
+		amount = 10
+		assert_equal({:dime => 1}, coin_changer(amount))
 	end
 end
