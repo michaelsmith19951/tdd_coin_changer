@@ -19,10 +19,10 @@ def coin_changer(amount)
 		amount -= 10
 	end
 
-	# while amount >= 5 do
-	# 	coins[:nickel] += 1
-	# 	amount -= 5
-	# end
+	while amount >= 5 do
+		coins[:nickel] += 1
+		amount -= 5
+	end
 
 	# while amount >= 1 do
 	# 	coins[:penny] += 1
