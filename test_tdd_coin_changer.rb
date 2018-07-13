@@ -49,7 +49,7 @@ class TestTddCoinChanger < Minitest::Test
 
 	def test_if_nickel_and_penny_equals_6_cents
 		amount = 6
-		assert_equal({:quarter => 1, :dime => 0, :nickel => 1, :penny => 1}, coin_changer(amount))
+		assert_equal({:quarter => 0, :dime => 0, :nickel => 1, :penny => 1}, coin_changer(amount))
 	end
 
 	
